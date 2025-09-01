@@ -4,13 +4,13 @@
     {
       "label": "mvn-run",
       "type": "shell",
-      "command": "mvn -q -DskipTests=false clean process-sources exec:java",
+      "command": "./mvnw -q -DskipTests=false clean process-sources exec:java",
       "problemMatcher": []
     },
     {
       "label": "mvn-style-checks",
       "type": "shell",
-      "command": "mvn spotless:check checkstyle:check",
+      "command": "./mvnw spotless:check checkstyle:check",
       "problemMatcher": [],
       "group": "build"
     },
@@ -20,7 +20,7 @@
       "command": "bash",
       "args": [
         "-lc",
-        "mvn -q spotless:apply"
+        "./mvnw -q spotless:apply"
       ],
       "problemMatcher": []
     },

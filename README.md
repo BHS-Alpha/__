@@ -33,7 +33,7 @@ You can run this code **in your browser (recommended)** or **on your local compu
 **Easiest and cleanest way to work on this project.**
 
 ### Steps:
-1. Open this project in [GitHub Workspaces](https://github.com/features/workspaces)  
+1. Open this project in [GitHub Workspaces](https://github.com/features/workspaces)
    *(your assignment may include a link)*
 2. The container will automatically:
    - Install Java 21, Maven, and JavaFX
@@ -41,8 +41,8 @@ You can run this code **in your browser (recommended)** or **on your local compu
 3. VS Code will open in your browser with everything ready to go
 4. Use the terminal to run:
 ```
-  mvn -q exec:java # Runs your program
-  mvn -q test # Runs all tests
+  ./mvnw -q exec:java # Runs your program
+  ./mvnw -q test # Runs all tests
 ```
 
 5. To view graphical output (JavaFX or Swing), click the forwarded port (9876) to open the virtual desktop window.
@@ -63,8 +63,8 @@ If you prefer to work on your own computer:
 2. Open in VS Code
 3. In the terminal, run:
 ```
-  mvn -q exec:java
-  mvn -q test
+  ./mvnw -q exec:java
+  ./mvnw -q test
 ```
 
 If you use the ZuluFX JDK, JavaFX GUIs will work with no extra setup.
@@ -80,7 +80,7 @@ This project uses **JUnit 5** for unit tests. All test files live in:
 
 To run all tests:
 ```
-  mvn -q test
+  ./mvnw -q test
 ```
 ---
 
@@ -108,12 +108,12 @@ To run all tests:
 - Locally: make sure you're using a JDK with JavaFX (e.g. ZuluFX 21)
 
 **Can't run the code?**
-- Try: `mvn clean` then `mvn -q compile`
+- Try: `./mvnw clean` then `./mvnw -q compile`
 - Make sure you're inside the container or using JDK 21+ locally
 
 **Tests failing?**
 - Review your logic and confirm the test expectations
-- Run `mvn -q test` to recheck
+- Run `./mvnw -q test` to recheck
 
 ---
 
